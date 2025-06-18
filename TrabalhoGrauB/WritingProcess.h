@@ -17,9 +17,9 @@ public:
     
     WritingProcess(int pid, const string& expressao);
 
-    void execute();
-
-    string getTipo() const { return "Gravação"; }
+    void execute() override;
+    
+    string getTipo() override { return "Gravação"; }
 
     string getExpressao() const { return expressao; }
 };

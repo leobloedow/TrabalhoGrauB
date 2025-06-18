@@ -4,8 +4,9 @@
 
 using namespace std;
 
-void WritingProcess::execute() {
+WritingProcess::WritingProcess(int pid, const string& expressao) : Processo(pid), expressao(expressao) {}
 
+void WritingProcess::execute() {
     ofstream arquivo("computation.txt", ios::app);
 
     if (arquivo.is_open()) {

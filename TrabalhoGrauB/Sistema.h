@@ -4,6 +4,7 @@
 #include "ComputingProcess.h"
 #include "WritingProcess.h"
 #include "PrintingProcess.h"
+#include "ReadingProcess.h"
 
 class Sistema {
 public:
@@ -16,5 +17,5 @@ public:
     void carregarFila();
 private:
     Fila<Processo*> processos;
+    int nextPid;
 };
-
