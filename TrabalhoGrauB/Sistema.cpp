@@ -129,7 +129,7 @@ void Sistema::executarProcesso() {
 }
 
 void Sistema::salvarFila() {
-    ofstream arquivo("computation.txt");
+    ofstream arquivo("Fila.txt");
     if (!arquivo.is_open()) {
         cout << "Erro ao abrir arquivo para salvar a fila." << endl;
         return;
@@ -157,7 +157,7 @@ void Sistema::salvarFila() {
     }
 
     arquivo.close();
-    cout << "Fila de processos salva em process_queue_state.txt com sucesso!" << endl;
+    cout << "Fila de processos salva em Fila.txt com sucesso!" << endl;
 }
 
 void Sistema::carregarFila() {
@@ -167,7 +167,7 @@ void Sistema::carregarFila() {
     }
     nextPid = 1;
 
-    ifstream arquivo("computation.txt");
+    ifstream arquivo("Fila.txt");
     if (!arquivo.is_open()) {
         cout << "Nenhum arquivo de fila de processos encontrado ou erro ao abrir." << endl;
         return;
@@ -210,5 +210,5 @@ void Sistema::carregarFila() {
         }
     }
     arquivo.close();
-    cout << "Fila de processos carregada de computation.txt com sucesso!" << endl;
+    cout << "Fila de processos carregada de Fila.txt com sucesso!" << endl;
 }
