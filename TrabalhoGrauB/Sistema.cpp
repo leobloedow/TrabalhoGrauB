@@ -16,22 +16,22 @@ void Sistema::listarOpcoes() {
     cout << "6 - Sair" << endl;
 }
 
-void criarProcesso() {
+void Sistema::criarProcesso() {
     
 }
 
-void executarProximo() {
+void Sistema::executarProximo() {
     
 }
 
-void executarProcesso() {
+void Sistema::executarProcesso() {
     
 }
 
-void salvarFila() {
+void Sistema::salvarFila() {
     
 }
 
-void carregarFila() {
+void Sistema::carregarFila() {
     
 }

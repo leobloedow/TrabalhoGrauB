@@ -4,6 +4,6 @@ class Processo {
 public:
     void execute();
     int getPid();
-private:
+protected:
     int pid;
 };
