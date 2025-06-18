@@ -2,20 +2,20 @@
 #include "Processo.h"
 #include "Fila.h"
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 class PrintingProcess : public Processo {
    
 private:
-        Fila<Processo*>& filaProcessos;
+    Fila<Processo*>& processos;
 
 public:
-
-    PrintingProcess(int pid, Fila<Processo*>& filaProcessos);
+    PrintingProcess(int pid, Fila<Processo*>& processos);
 
     void execute();
 
-    string getTipo() const { return "Impressão"; }
+    string getTipo() { return "Impressão"; }
 
 };

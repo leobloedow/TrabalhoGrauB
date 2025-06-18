@@ -1,8 +1,11 @@
 #pragma once
+#include <string>
 
 class Processo {
 public:
-    void execute();
+    Processo(int id);
+    virtual void execute() = 0;
+    virtual std::string getTipo() = 0;
     int getPid();
 protected:
     int pid;

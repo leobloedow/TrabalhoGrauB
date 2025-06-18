@@ -1,7 +1,7 @@
 #include "Processo.h"
 
-void Processo::execute() {
-    
+Processo::Processo(int id) : pid(id) {
+
 }
 
 int Processo::getPid() {

@@ -17,6 +17,9 @@ public:
     Node<T>* getInicio();
     bool find(int anum);
     int getTamanho();
+    void setInicio(Node<T>* newInicio) { inicio = newInicio; }
+    void setFim(Node<T>* newFim) { fim = newFim; }
+    void setTamanho(int newTamanho) { tamanho = newTamanho; }
 };
 
 //cpp

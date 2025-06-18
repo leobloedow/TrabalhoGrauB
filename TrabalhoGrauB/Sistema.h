@@ -1,6 +1,9 @@
 #pragma once
 #include "Fila.h"
 #include "Processo.h"
+#include "ComputingProcess.h"
+#include "WritingProcess.h"
+#include "PrintingProcess.h"
 
 class Sistema {
 public:
@@ -12,6 +15,6 @@ public:
     void salvarFila();
     void carregarFila();
 private:
-    Fila<Processo> processos;
+    Fila<Processo*> processos;
 };
 

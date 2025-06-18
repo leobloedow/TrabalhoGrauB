@@ -32,6 +32,6 @@ void ComputingProcess::execute() {
             << " = " << resultado << endl;
 
 }
-    string ComputingProcess::getTipo() const {
+    string ComputingProcess::getTipo() {
         return "Cálculo";
 }
